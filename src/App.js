@@ -17,9 +17,10 @@ function App() {
   
   return (
     <div className="container-fluid">
-      <div class = "row d-flex justify-content-center align-self-center" >
+      <div className= "row d-flex justify-content-center align-self-center" >
         
           {pageView.conponentToShwo}
+          {/* < Dashboard / > */}
         </div>
       </div>
   );

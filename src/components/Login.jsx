@@ -25,9 +25,9 @@ export default function Login({ chengePage}) {
                     Loing success pless Please wait a few seconds you sign
                 </div>`;
 
-                let { ClientSecret} = data;
+                let { clientSecret} = data;
                 
-                localStorage.setItem("clintSecret", ClientSecret);
+                localStorage.setItem("clientSecret", clientSecret);
 
                 setTimeout(() => {
                     chengePage("Dashboard");
@@ -36,7 +36,7 @@ export default function Login({ chengePage}) {
             }else{
                 let messageWapper = document.querySelector(".show-message");
                 messageWapper.innerHTML = `<div class="alert alert-danger" role="alert">
-                    Loing success pless Please wait a few seconds you sign
+                    Loing faild
                 </div>`;
             }
             
